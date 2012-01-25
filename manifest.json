@@ -1,0 +1,16 @@
+{
+  "name": "BlueMaker",
+  "version": "0.1",
+  "description": "Make body element blue by the help of jQuery",
+  "permissions": [
+    "tabs", "http://*/", "https://*/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery-1-7-1.js", "main.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}
